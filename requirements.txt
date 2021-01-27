@@ -11,3 +11,10 @@ environs # simplified environment variable parsing
 django-middleware-global-request # global access to request
 Werkzeug # for runserver_plus
 bpython # for shell_plus
+
+# for big data
+numpy
+pandas
+pytables
+hdf5
+openpyxl
