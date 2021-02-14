@@ -1,0 +1,407 @@
+
+
+
+/* Screen to 1520px (widths smaller than the 1900 row))*/
+
+@media only screen and (max-width:1900px) {
+	.main-nav {
+		margin-right: 1%;
+	}
+
+	.btn-main:link,
+	.btn-main:visited,
+	input[type=submit] {
+		transform: translate(60%);
+	}
+
+	.stodola {
+		height: 130vh;
+	}
+
+	.btn-section-stodola:link,
+	.btn-section-stodola:visited,
+	input[type=submit] {
+		display: inline-block;
+		margin-top: 80px;
+	}
+
+	/* Screens up to 1422px*/
+	@media only screen and (max-width: 1716px) {
+
+		.main-nav {
+			float: right;
+			margin-right: 5%;
+		}
+
+
+		.main-nav li a:link,
+		.main-nav li a:visited {
+			font-size: 80%;
+			margin-left: 5px;
+		}
+
+		.btn-main:link,
+		.btn-main:visited,
+		input[type=submit] {
+			transform: translate(50%);
+		}
+
+		.quote-h {
+			position: absolute;
+			width: 570px;
+			top: 75%;
+			left: 75%;
+
+		}
+
+		.main-quote-box {
+			position: absolute;
+			width: 1140px;
+			top: 45%;
+			left: 45%;
+			transform: translate(-40%, -50%);
+			margin-top: 3%;
+		}
+	}
+
+	@media only screen and (max-width: 1354px) {
+
+		.main-nav {
+			float: right;
+			margin-right: 1%;
+		}
+
+		.btn-main:link,
+		.btn-main:visited,
+		input[type=submit] {
+			display: inline-block;
+			padding: 10px 40px;
+			margin-left: 20px;
+			margin-right: 15px;
+			margin-top: 20px;
+			transform: translate(20%, 0%);
+		}
+
+		.logo {
+			height: 120px;
+			margin-left: 8%;
+		}
+
+		.ind {
+			width: 70%;
+			margin-left: 30%;
+		}
+
+		.btn-section-stodola:link,
+		.btn-section-stodola:visited,
+		input[type=submit] {
+			display: inline-block;
+			margin-top: 70px;
+		}
+	}
+	@media only screen and (max-width: 1236px) {
+		.btn-main:link,
+		.btn-main:visited,
+		input[type=submit] {
+			display: inline-block;
+			padding: 6px 35px;
+			margin-left: 10px;
+			margin-right: 10px;
+			margin-top: 20px;
+			transform: translate(20%, 0%);
+		}
+
+		.row {
+			max-width: 1140px;
+			margin: 0 5%;
+		}
+
+		.wolna-ziemia {
+			height: 120vh;
+		}
+
+		.stodola {
+			height: 170vh;
+		}
+
+		.btn-section-stodola:link,
+		.btn-section-stodola:visited,
+		input[type=submit] {
+			display: inline-block;
+			margin-top: 47%;
+			margin-left: -5%;
+		}
+
+
+		@media only screen and (max-width: 1099px) {
+
+			.main-nav {
+				float: right;
+			}
+
+			.logo {
+
+				height: 100px;
+				width: auto;
+				float: left;
+				margin: 2%;
+				margin-left: 6%
+			}
+
+			.quote-h {
+				position: absolute;
+				width: 70vh;
+				top: 75%;
+				left: 65%;
+				transform: translate(-50%, -5%);
+
+			}
+
+			.main-quote-box h1 {
+				font-size: 130%;
+			}
+
+			.stodola {
+				height: 190vh;
+			}
+
+			.btn-section-stodola:link,
+			.btn-section-stodola:visited,
+			input[type=submit] {
+				display: inline-block;
+				margin-top: 63%;
+				margin-left: -5%;
+			}
+		}
+
+
+
+		@media only screen and (max-width: 1023px) {
+
+			p {
+				font-size: 90%;
+			}
+
+			.stodola-text {
+				font-size: 120%
+			}
+		}
+
+		.main-nav {
+			float: right;
+			margin-right: 0%;
+
+		}
+
+		.logo {
+			height: 110px;
+		}
+
+		.btn-section-stodola:link,
+		.btn-section-stodola:visited,
+		input[type=submit] {
+			display: inline-block;
+			margin-top: 50%;
+			margin-left: -5%;
+		}
+
+	}
+
+	@media only screen and (max-width: 985px) {
+
+
+		.logo {
+			height: 100px;
+			margin: 2%;
+			margin-left: 5%;
+		}
+
+		.main-nav li a:link,
+		.main-nav li a:visited {
+			font-size: 70%;
+			margin-left: 3px;
+		}
+
+		.btn-section-stodola:link,
+		.btn-section-stodola:visited,
+		input[type=submit] {
+			display: inline-block;
+			margin-top: 65%;
+			margin-left: -10%;
+		}
+
+		.btn-ruch:link,
+		.btn-ruch:visited,
+		input[type=submit] {
+			transform: translate(-20%);
+		}
+
+		.stodola {
+			height: 200vh;
+		}
+
+		.p {
+			font-size: 85%;
+		}
+	}
+
+	@media only screen and (max-width: 888px) {
+
+		.logo {
+			height: 90px;
+			margin: 2%;
+			margin-left: 5%;
+		}
+
+		.quote-h {
+			font-size: 100%;
+		}
+
+		.btn-section-stodola:link,
+		.btn-section-stodola:visited,
+		input[type=submit] {
+			display: inline-block;
+			margin-top: 85%;
+			margin-left: -15%;
+		}
+
+		.wolna-ziemia {
+			height: 140vh;
+		}
+
+		.stodola {
+			height: 220vh;
+		}
+	}
+
+	/* Ipad - 776 X 1024 */
+	@media only screen and (max-width: 776px) {
+
+
+		.main-nav {
+			display: none;
+			float: left;
+			font-size: 65%;
+			margin-left: 20px;
+		}
+
+		.main-nav li {
+			display: block;
+		}
+
+		.mobile-nav-icon {
+			display: inline-block;
+		}
+
+		.main-nav li a:link,
+		.main-nav li a:visited {
+			display: block;
+			border: 0;
+
+		}
+
+		.stodola {
+			height: 110vh;
+		}
+
+		.btn-section-stodola:link,
+		.btn-section-stodola:visited,
+		input[type=submit] {
+			display: inline-block;
+			margin-top: 45%;
+			margin-left: -20%;
+		}
+
+		.wolna-ziemia {
+			height: 80vh;
+		}
+
+	}
+
+	/* phones 414px up to Surface Duom(540x720)*/
+	@media only screen and (max-width: 541px) {
+
+
+		.logo {
+			margin: 5%;
+			margin-left: 10%;
+		}
+
+		.col {
+			width: 100%;
+		}
+
+		.quote-h {
+			position: absolute;
+			width: 70vh;
+			top: 75%;
+			left: 50%;
+			transform: translate(-50%, -5%);
+
+		}
+
+		.wolna-ziemia {
+			height: 130vh;
+		}
+
+		.ind {
+			width: 60%;
+			margin-right: 50%;
+			margin-top: 50%;
+			transform: translate(-20%);
+		}
+
+		.stodola {
+			height: 120vh;
+		}
+
+		.btn-section-stodola:link,
+		.btn-section-stodola:visited,
+		input[type=submit] {
+			display: inline-block;
+			margin-top: 15%;
+			margin-left: -5%;
+		}
+
+	}
+
+
+	@media only screen and (max-width: 415px) {
+
+		.quote-h {
+			position: absolute;
+			width: 50vh;
+			top: 85%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+		}
+
+		.btn-main:link,
+		.btn-main:visited,
+		input[type=submit] {
+			transform: translate(10%);
+		}
+
+		.ind {
+			width: 60%;
+			margin-right: 50%;
+			margin-top: 95%;
+			transform: translate(-20%);
+		}
+
+		.stodola {
+			height: 140vh;
+		}
+
+		.btn-section-stodola:link,
+		.btn-section-stodola:visited,
+		input[type=submit] {
+			display: inline-block;
+			margin-top: 60%;
+			margin-left: -30%;
+		}
+
+
+	}
+}

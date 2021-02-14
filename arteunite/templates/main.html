@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load static %}
+{% load wagtailcore_tags %}
+{% load i18n %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+
+{% endblock extra_css %}
+
+{% block content %}
+    {% block header %}
+        <header>
+            {% block menu %}
+                <nav>
+                    <div class=" header-row">
+                        <img src="{%  static "resources/img/logo_RED.png" %}" alt="Arte Unite Logo" class="logo">
+
+                        <ul class="main-nav js--main-nav">
+                            <li><a href="index.html">Główna</a></li>
+                            <li><a href="warsztaty.html">Warsztaty</a></li>
+                            <li><a href="misja.html">Misja</a></li>
+                            <li><a href="miejsca.html">Stodoła Wymyślacz</a></li>
+                            <li><a href="RuchWolnejZiemi.html">Ruch Wolnej Ziemi</a></li>
+                            <li><a href="arteunitestatut.html">Statuty</a></li>
+                        </ul>
+                        <a class="mobile-nav-icon js--nav-icon">
+                            <ion-icon name="reorder-four-outline"></ion-icon>
+                        </a>
+                    </div>
+
+
+                </nav>
+
+            {% endblock menu %}
+        </header>
+    {% endblock header %}
+
+    {% block sections %}
+
+    {% endblock sections %}
+    {% block footer %}
+		<footer>
+			<div class="row">
+				<div class="col span-1-of-2">
+					<ul class="footer-nav">
+						<li><a href="Press.html">Prasa</a></li>
+						<li><a href="arteunitestatut.html">Statut</a></li>
+						<li><a href="ContactUs.html">Kontakt</a></li>
+					</ul>
+				</div>
+				<div class="col span-1-of-2">
+					<ul class="social-links">
+						<li><a href="https://www.facebook.com/sztukajednosci"><ion-icon name="logo-facebook"></ion-icon></a></li>
+						<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+						<li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<p class="copyrights">
+					Arte Unite 2020 &copy;
+				</p>
+			</div>
+		</footer>
+    {% endblock footer %}
+{% endblock content %}

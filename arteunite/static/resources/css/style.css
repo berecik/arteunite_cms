@@ -1,0 +1,822 @@
+/*------------------*/
+/*BASIC SET UP*/
+/*------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+html, body {
+	background-color: #fff;
+	color: #2a2a2a;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 19px;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+	}
+
+
+/*------------------*/
+/*REUSABLE COMPONENTS*/
+/*------------------*/
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+p {
+	text-align: center;
+	font-size: 95%;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}
+ion-icon {
+	font-size: 200%;
+	padding: 10px 10px;
+}
+.box {
+	padding: 1%;
+}
+/*------------------*/
+/*HEADINGS*/
+/*------------------*/
+
+h1 {
+	color: rgba(255, 255, 255, 0.83);
+	font-size: 170%;
+	font-weight: 500;
+	letter-spacing: 0.2px;
+	word-spacing: 2px;
+}
+
+h3 {
+	font-size: 90%;
+	text-align: center;
+	word-spacing: 4px;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	font-weight: 600;
+}
+
+q {
+	font-size: 110%;
+}
+
+
+
+/*------------------*/
+/*BUTTONS*/
+/*------------------*/
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+	display:inline-block;
+	transform: translate(50%);
+	padding: 10px 40px;
+	margin-left: 20px;
+	margin-right: 15px;
+	margin-top: 10px;
+	text-decoration: none;
+	font-weight: 600;
+	border-radius: 200px;
+	color: rgb(134, 8, 9);
+	background-color: rgba(245, 245, 245, 0.78);
+	transition: background-color 0.3s, color 0.3s;
+}
+.btn:hover,
+.btn:active,
+input[type=submit] {
+	background-color: rgba(202, 185, 139, 0.74);
+	color: rgba(255, 255, 255, 0.74);
+}
+.btn-main:link,
+.btn-main:visited,
+input[type=submit] {
+	display:inline-block;
+	padding: 10px 40px;
+	margin-left: 20px;
+	margin-right: 15px;
+	margin-top: 20px;
+	text-decoration: none;
+	font-weight: 600;
+	border-radius: 200px;
+	color: rgb(134, 8, 9);
+	background-color: rgba(245, 245, 245, 0.78);
+	transition: background-color 0.3s, color 0.3s;
+	transform: translate(100%);
+}
+.btn-main:hover,
+.btn-main:active,
+input[type=submit] {
+	background-color: rgba(202, 185, 139, 0.74);
+	color: rgba(255, 255, 255, 0.74);
+}
+
+.btn-ruch:link,
+.btn-ruch:visited,
+input[type=submit] {
+	display:inline-block;
+	padding: 10px 40px;
+	margin-left: 20px;
+	margin-right: 15px;
+	margin-top: 25px;
+	text-decoration: none;
+	font-weight: 600;
+	border-radius: 200px;
+	color: rgb(134, 8, 9);
+	background-color: rgba(245, 245, 245, 0.78);
+	transition: background-color 0.3s, color 0.3s;
+	transform: translate(-50%);
+	margin-top: 10%;
+}
+.btn-ruch:hover,
+.btn-ruch:active,
+input[type=submit] {
+	background-color: rgba(202, 185, 139, 0.74);
+	color: rgba(255, 255, 255, 0.74);
+}
+
+.btn-section-workshop:link,
+.btn-section-workshop:visited,
+input[type=submit] {
+	display:inline-block;
+	padding: 10px 40px;
+	margin-left: 20px;
+	margin-right: 15px;
+	margin-top: 25px;
+	text-decoration: none;
+	font-weight: 600;
+	border-radius: 200px;
+	color: rgb(134, 8, 9);
+	background-color: rgba(245, 245, 245, 0.78);
+	transition: background-color 0.3s, color 0.3s;
+	transform: translate(-25%);
+}
+.btn-section-workshop:hover,
+.btn-section-workshop:active,
+input[type=submit] {
+	background-color: rgba(202, 185, 139, 0.74);
+	color: rgba(255, 255, 255, 0.74);
+}
+.btn-section-stodola:link,
+.btn-section-stodola:visited,
+input[type=submit] {
+	display:inline-block;
+	padding: 10px 40px;
+	margin-left: 20px;
+	margin-right: 15px;
+	margin-top: 10px;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 120%;
+	border-radius: 200px;
+	color: rgb(134, 8, 9);
+	background-color: rgba(245, 245, 245, 0.78);
+	transition: background-color 0.3s, color 0.3s;
+	transform: translate(40%, 450%);
+}
+.btn-section-stodola:hover,
+.btn-section-stodola:active,
+input[type=submit] {
+	background-color: rgba(202, 185, 139, 0.74);
+	color: rgba(255, 255, 255, 0.74);
+}
+.btn-features:link,
+.btn-features:visited,
+input[type=submit] {
+	display:inline-block;
+	padding: 15px 40px;
+	margin-left: 20px;
+	margin-right: 15px;
+	margin-top: 10%;
+	text-decoration: none;
+	font-weight: 600;
+	border-radius: 200px;
+	color: rgb(134, 8, 9);
+	background-color: rgba(245, 245, 245, 0.78);
+	transition: background-color 0.3s, color 0.3s;
+}
+.btn-features:hover,
+.btn-feautres:active,
+input[type=submit] {
+	background-color: rgba(202, 185, 139, 0.74);
+	color: rgba(255, 255, 255, 0.74);
+}
+
+.btn-statut:link,
+.btn-statut:visited,
+input[type=submit] {
+	display:inline-block;
+	padding: 15px 40px;
+	margin-left: 20px;
+	margin-right: 15px;
+	margin-top: 10%;
+	text-decoration: none;
+	font-weight: 600;
+	border-radius: 200px;
+	color: rgb(134, 8, 9);
+	background-color: rgba(245, 245, 245, 0.78);
+	transition: background-color 0.3s, color 0.3s;
+}
+.btn-statut:hover,
+.btn-statut:active,
+input[type=submit] {
+	background-color: rgba(202, 185, 139, 0.74);
+	color: rgba(255, 255, 255, 0.74);
+}
+
+
+/*------------------*/
+/*HEADER*/
+/*------------------*/
+
+header, subpage-header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.08)), url(/static/resources/img/grass.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	background-attachment: fixed;
+	
+}
+
+.main-quote-box {
+	position: absolute;
+	width: 1140;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin-top: 3%;
+}
+.main-quote-box h1 {
+	text-align: center;
+	font-size: 150%;
+}
+
+.logo {
+	
+	height: 150px;
+	width: auto;
+	float:left;
+	margin:3%;
+	margin-left: 4%;
+} 
+
+.quote-author {
+	font-size: 60%;
+	float: right;
+	margin-right: 20%;
+	margin-top: 2%;
+}
+.quote-h {
+	position: absolute;
+	width: 70vh;
+	top:75%;
+	left: 70%;
+	transform: translate(-55%, -55%);
+	
+}
+.main-nav {
+	float: right; 
+	list-style: none;
+	margin-right: 10%;
+	margin-top: 1%;
+}
+.main-nav li {
+	display: inline-block;
+	padding: 1%;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 90%;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.3s;
+	margin-left: 40px
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+	border-bottom: 2px solid rgba(245, 245, 245, 0.78);
+}
+
+.mobile-nav-icon {
+	float:right;
+	margin-top: 10px;
+	margin-right: 10px;
+	color: #fff;
+	font-size: 150%;
+	cursor: pointer;
+	display: none;
+}
+
+.subpage-header {
+	height: 40vh;
+}
+
+.subpage-header div {
+}
+
+/*------------------*/
+/*SECTION FEATURES*/
+/*------------------*/
+
+.section-features {
+	margin-top: 70px;
+	margin-bottom: 20px;
+}
+.section-features .line {
+	margin-bottom: 20px
+}
+
+.quote {
+	font-size: 70%;
+	text-align: right;
+	margin-top: 10px;
+	margin-right: 70px;
+	margin-bottom: 30px;
+}
+.line {
+	display: block;
+	height: 2px;
+	background-color: rgb(134, 8, 9);
+	width: 200px;
+	margin: 0 auto;
+}
+.quote-h {
+	text-align: center;
+	color: #fff;
+	padding-top: 10%;
+	font-size: 120%;
+}
+/*------------------*/
+/*GALLERY*/
+/*------------------*/
+
+.section-gallery {
+	width: auto;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 2%;
+}
+.gallery-showcase {
+	list-style: none;
+	width: 100%;
+}
+.gallery-showcase li {
+	display: block;
+	float: left;
+	width: 25%;
+}
+.gallery-photo {
+	width: 100%;
+	overflow: hidden;
+	background-color: #000;
+}
+.gallery-photo img {
+	opacity: 0.7;
+	width: 100%;
+	height: auto;
+	transform: scale(1.15);
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.gallery-photo img:hover {
+	opacity: 1;
+	transform: scale(1.04);
+}
+
+/*------------------*/
+/*SECTION RUCH WOLNEJ ZIEMI*/
+/*------------------*/
+
+.wolna-ziemia {
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/static/resources/img/wolna_ziemia.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 120vh;
+	background-attachment: fixed;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.wz-opis {
+	text-align: center;
+	font-size: 130%;
+	padding-left: 10%;
+	margin-top: 0;
+	letter-spacing: 0.5px;
+	word-spacing: 1px;
+	/*height: 50rem;*/
+	color: #ddd;
+
+}
+.ind {
+	width: 80%; 
+	margin-left: 50%;
+}
+.wz-header {
+	text-align: center;
+}
+.title-rwz {
+	text-align: center;
+	margin-bottom: 2rem;
+	color: #fff;
+}
+
+/*------------------*/
+/*STODOLA*/
+/*------------------*/
+
+.stodola {
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/static/resources/img/stodola.png);
+	background-size: cover;
+	background-position: center;
+	height: 120vh;
+	background-attachment: fixed;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.stodola-text {
+	text-align: center;
+	font-size: 130%;
+	padding-left: 10%;
+	margin-top: 0;
+	letter-spacing: 0.5px;
+	word-spacing: 1px;
+	height: 50vh;
+	color: #ddd;
+}
+.stodola-title {
+	text-align: center;
+	color: #fff;
+	margin-bottom: 2%
+}
+
+/*------------------*/
+/*WARSZTATY*/
+/*------------------*/
+
+.workshop {
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/static/resources/img/w3.png);
+	background-size: cover;
+	background-position: center;
+	height: 60hv;
+	background-attachment: fixed;
+	margin-top: 0;
+	padding-top: 0;
+	
+}
+
+.workshop-header {
+	text-align: center;
+	color: #fff;
+	margin-bottom: 2%;
+	
+}
+
+.workshop-box:first-child {
+	padding-right: 4%;
+	text-align: left;
+}
+.workshop-box:last-child {
+	text-align: right;
+	padding-left: 35;
+	margin-top: 2%;
+	margin-bottom:5%;
+	color: #ddd;
+	font-size: 130%;
+	letter-spacing: 0.5px;
+	word-spacing: 1px;
+}
+
+/*------------------*/
+/*SECTION CALL*/
+/*------------------*/
+
+.title-box {
+	display: inline-block;
+}
+.title-call {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.title-box {
+	background-color: #f8f8f8;
+	border-radius: 10px;
+	width: 90%;
+}
+.title-box div {
+	padding: 15px;
+	border-bottom: 1px solid;
+}
+.title-box ul {
+	
+	list-style: none;
+}
+
+.line-end {
+	display: block;
+	height: 2px;
+	background-color: rgb(134, 8, 9);
+	width: 300px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+
+
+
+/*------------------*/
+/*FOOTER*/
+/*------------------*/
+
+footer {
+	background-image:linear-gradient(rgba(26, 11, 11, 0.87), rgba(0, 0, 0, 0.68)), url(/static/resources/img/grass.jpg);
+}
+.footer-nav {
+	list-style: none;
+	float: left;
+}
+.social-links {
+	list-style: none;
+	float: right;
+}
+.footer-nav li,
+.social-links li {
+	display: inline-block;
+	margin-right: 20px;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+	text-decoration: none;
+	border: 0;
+	color: rgba(202, 185, 139);
+}
+.copyrights {
+	color: rgba(202, 185, 139);
+}
+
+/*------------------*/
+/*Subpage RUCH WOLNEJ ZIEMI*/
+/*------------------*/
+
+.heading-subpage {
+	padding: 30px 0px;
+	font-size: 100%;
+	text-align: center;
+}
+.humantree {
+	width: 50%;
+	height: auto;
+	float: right;
+	transform: translate(-50%);
+	padding-bottom: 5%;
+	padding-top: 5%;
+}
+.text-first {
+	padding: 50px 10px;
+	text-align: center;
+	font-size: 110%;
+}
+.rainbow-photo {
+	width: 100%;
+	height: auto;
+	margin: 15% 0%;
+}
+.line-subpage {
+	display: block;
+	height: 2px;
+	background-color: rgb(134, 8, 9);
+	width: 300px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+
+}
+.text-bottom {
+	margin: 0 5%;
+}
+.title-call {
+	padding: 2%;
+}
+/*------------------*/
+/*Subpage KONTAKT*/
+/*------------------*/
+
+.contact-form {
+	width: 60%;
+	margin: 0 auto;
+}
+input[type=text]
+input[type=email],
+select,
+textarea {
+	width: 100%;
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+textarea {
+	height: 100px;
+}
+
+input[type=checkbox] {
+	margin: 10px 5px 10px 0;
+}
+
+/*------------------*/
+/*Subpage Misja*/
+/*------------------*/
+
+.owl {
+	width: 40%;
+	height: auto;
+	transform: translate(70%);
+}
+
+/*------------------*/
+/*Subpage Miejsce*/
+/*------------------*/
+
+.map-point {
+	width: 70%;
+	transform: translate(20%);
+}
+.stodola-photo {
+	width: 100%;
+	height: auto;
+	padding-top: 15%;
+	padding-right: 2%;
+}
+.text-first-miejsca {
+	padding: 3% 0;
+	
+}
+.text-bottom-miejsca {
+	padding: 10% 0;
+}
+
+/*------------------*/
+/*Subpage Warsztaty*/
+/*------------------*/
+
+.hand {
+	width: 40%;
+	height: auto;
+	transform: translate(75%);
+	margin: 5% 0;
+}
+.workshop-autor {
+	width: 300px;
+	border-radius: 50%;
+}
+.line-subpage-w {
+	display: block;
+	height: 2px;
+	background-color: rgb(134, 8, 9);
+	width: 200px;
+	margin: 2% auto;
+}
+.content-subpage span {
+	font-size: 200%;
+}
+
+/*------------------*/
+/*Subpage Status*/
+/*------------------*/
+
+.statut-title {
+	padding: 3% 0;
+	text-align: center;
+}
+.statut-text {
+	padding: 2% 4%;
+	text-align: left;
+}
+
+/*------------------*/
+/*Subpage Dołącz się*/
+/*------------------*/
+
+.dolaczsie-people {
+	width: 50%;
+	transform: translate(50%);
+	margin-bottom: 7%;
+}
+.dolacz-text {
+	margin-top: 3%;
+}
+.dolaczsie{
+	margin-bottom: 3%;
+}
+.dolacz-bottom {
+	margin-bottom: 3%;
+}
+.newsletter-sub {
+	transform: translate(30%);	
+}
+#email-newsletter {
+	width: 40%;
+	height: auto;
+}
+.btn-dolacz:link,
+.btn-dolacz:visited,
+input[type=submit] {
+	display:inline-block;
+	padding: 20px 50px;
+	margin-left:15px;
+	margin-right: 15px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-decoration: none;
+	font-weight: 600;
+	border-radius: 200px;
+	color: rgb(134, 8, 9);
+	background-color: rgba(245, 245, 245, 0.78);
+	transition: background-color 0.3s, color 0.3s;
+	transform: translate(120%);
+}
+.btn-dolacz:hover,
+.btn-dolacz:active,
+input[type=submit] {
+	background-color: rgba(202, 185, 139, 0.74);
+	color: rgba(255, 255, 255, 0.74);
+}
+/*------------------*/
+/*Subpage Dorzuć się*/
+/*------------------*/
+.dorzuc-sie-hands {
+	width: 60%;
+	transform: translate(30%);
+	margin-bottom: 3%;
+}
+
+.btn-dorzuc:link,
+.btn-dorzuc:visited,
+input[type=submit] {
+	display:inline-block;
+	padding: 30px 60px;
+	margin-left:15px;
+	margin-right: 15px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	text-decoration: none;
+	font-weight: 600;
+	border-radius: 200px;
+	color: rgb(134, 8, 9);
+	background-color: rgba(245, 245, 245, 0.78);
+	transition: background-color 0.3s, color 0.3s;
+	transform: translate(200%);
+}
+.btn-dorzuc:hover,
+.btn-dorzuc:active,
+input[type=submit] {
+	background-color: rgba(202, 185, 139, 0.74);
+	color: rgba(255, 255, 255, 0.74);
+}
+.btn-press:link,
+.btn-press:visited,
+input[type=submit] {
+	display:inline-block;
+	padding: 30px 60px;
+	margin-left:15px;
+	margin-right: 15px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	text-decoration: none;
+	font-weight: 600;
+	border-radius: 200px;
+	color: rgb(134, 8, 9);
+	background-color: rgba(245, 245, 245, 0.78);
+	transition: background-color 0.3s, color 0.3s;
+	transform: translate(5%);
+}
+.btn-press:hover,
+.btn-press:active,
+input[type=submit] {
+	background-color: rgba(202, 185, 139, 0.74);
+	color: rgba(255, 255, 255, 0.74);
+}
+
+/* button statut */
+
+.content-bottom-s {
+	display: inline-block;
+	width: 1140px;
+	transform: translate(33%);
+	margin-bottom: 5%;
+}

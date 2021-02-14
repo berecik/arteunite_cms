@@ -1,21 +1,233 @@
-{% extends "base.html" %}
+{% extends "main.html" %}
 {% load static %}
+{% load wagtailcore_tags %}
+{% load i18n %}
+{% block sections %}
+    <section>
 
-{% block body_class %}template-homepage{% endblock %}
+        <div class="main-quote-box">
+            <h1>{{ page.long_name|richtext }}</h1>
+            <a class="btn-main" href="#">Dowiedz się</a>
+            <a class="btn-main" href="#">Dołącz się</a>
+            <a class="btn-main" href="#">Dorzuć się</a>
 
-{% block extra_css %}
+        </div>
+        <div class="row quote-mix">
+            <div class="col span 1-of-2">
+            </div>
+            <div class="col span 1-of-2">
+                <div class="quote-h">
+                    <q class="quote">{{ page.quote }}</q>
+                    <p class="quote">{{ page.quote_author }}</p>
+                </div>
+            </div>
+        </div>
 
-{% comment %}
-Delete the line below if you're just getting started and want to remove the welcome screen!
-{% endcomment %}
-<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
-{% endblock extra_css %}
+    </section>
 
-{% block content %}
+    <section class="section-features">
 
-{% comment %}
-Delete the line below if you're just getting started and want to remove the welcome screen!
-{% endcomment %}
-{% include 'home/welcome_page.html' %}
+        <div class="row js--section-features">
+            <div class="col span-1-of-3 box">
+                <ion-icon name="earth"></ion-icon>
+                <h3>{{ page.earth_head }}</h3>
+                {{ page.earth|richtext }}
+                <a class="btn-features" href="misja.html">Dowiedz się więcej</a>
+            </div>
 
-{% endblock content %}
+            <div class="col span-1-of-3 box">
+                <ion-icon name="star"></ion-icon>
+                <h3>{{ page.star_head }}</h3>
+                {{ page.star|richtext }}
+
+                <a class="btn-features" href="RuchWolnejZiemi.html">Dowiedz się więcej</a>
+            </div>
+            <div class="col span-1-of-3 box">
+                <ion-icon name="flame"></ion-icon>
+                <h3>{{ page.flame_head }}</h3>
+                {{ page.flame|richtext }}
+                <a class="btn-features" href="RuchWolnejZiemi.html">Dowiedz się więcej</a>
+            </div>
+        </div>
+
+    </section>
+    <section class="section-gallery">
+
+        <ul class="gallery-showcase">
+            <li>
+                <figure class="gallery-photo">
+                    <img src="{% static 'resources/img/galeria1.jpg' %}" alt="Photo1">
+                </figure>
+            </li>
+            <li>
+                <figure class="gallery-photo">
+                    <img src="{% static 'resources/img/galeria2.jpg' %}" alt="Photo2">
+                </figure>
+            </li>
+            <li>
+                <figure class="gallery-photo">
+                    <img src="{% static 'resources/img/galeria3.jpg' %}" alt="Photo3">
+                </figure>
+            </li>
+            <li>
+                <figure class="gallery-photo">
+                    <img src="{% static 'resources/img/galeria4.jpg' %}" alt="Photo4">
+                </figure>
+            </li>
+
+        </ul>
+        <ul class="gallery-showcase">
+            <li>
+                <figure class="gallery-photo">
+                    <img src="{% static 'resources/img/galeria5.jpg' %}" alt="Photo5">
+                </figure>
+            </li>
+            <li>
+                <figure class="gallery-photo">
+                    <img src="{% static 'resources/img/galeria6.jpg' %}" alt="Photo6">
+                </figure>
+            </li>
+            <li>
+                <figure class="gallery-photo">
+                    <img src="{% static 'resources/img/galeria7.jpg' %}" alt="Photo7">
+                </figure>
+            </li>
+            <li>
+                <figure class="gallery-photo">
+                    <img src="{% static 'resources/img/galeria8.jpg' %}" alt="Photo8">
+                </figure>
+            </li>
+
+        </ul>
+    </section>
+    <section class="wolna-ziemia">
+        <div class="row">
+
+            <div class="col span-1-of-2 wz-box">
+                <div class="row title-rwz">
+                    <h2>Ruch Wolnej Ziemi</h2>
+                </div>
+                <div class="row">
+                    <div class="line-subpage">
+                    </div>
+                </div>
+                <div class="row wz-opis">
+                    {{ page.wolna_ziemia|richtext }}
+                </div>
+                <a class="btn-ruch" href="RuchWolnejZiemi.html">Dowiedz się więcej</a>
+
+            </div>
+            {#            <div class="col span-1-of-2 wz-box">#}
+            {#                <img src="{% static 'resources/img/ind_bmw.png' %}" alt="Logo Wolnej Ziemi" class="ind">#}
+            {#            </div>#}
+
+        </div>
+
+    </section>
+    <section class="stodola">
+
+        <div class="row">
+            <div class="col span-1-of-2">
+            </div>
+            <div class="col span-1-of-2">
+                <div class="row stodola-title">
+                    <h1>Stodoła Wymyślacz</h1>
+                </div>
+                <div class="row">
+                    <div class="line-subpage">
+                    </div>
+                </div>
+                <div class="stodola-text">{{ page.stodola|richtext }}</div>
+                <a class="btn-section-stodola" href="miejsca.html">Dowiedz się więcej</a>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="workshop">
+
+        <div class="row">
+            <div class="col span-1-of-2 workshop-box">
+                <div class="row workshop-header">
+                    <h1>Warsztaty</h1>
+                </div>
+                <div class="row">
+                    <div class="line-subpage">
+                    </div>
+                </div>
+                <div class="workshop-opis">
+                    {{ page.workshop|richtext }}
+                    <a class="btn-section-workshop" href="warsztaty.html">Dowiedz się więcej</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-call">
+        <div class="row title-call">
+            <h2>Wezwanie do działania</h2>
+            <p>Teraz jest moment, kiedy nie ma już innych osób, które to zrobią za Ciebie, ponieważ poroblem dotyczy
+                skali tej zmiany.</p>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <div class="title-box">
+                    <div>
+                        <h3>Dołącz do nas</h3>
+                        <p class="join-title"> Dołącz do naszej grupy, zapisując się na miesięczny newsletter</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="shield">
+                                <ion-icon name="shield-checkmark"></ion-icon>
+                                Bądź na bieżąco z wydarzeniami
+                            </li>
+                            <li class="shield">
+                                <ion-icon name="shield-checkmark"></ion-icon>
+                                Stań się częścią czegoś większego
+                            </li>
+                            <li class="shield">
+                                <ion-icon name="shield-checkmark"></ion-icon>
+                                Korzystaj ze zniżki na nas warsztaty
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="dolaczsie.html" class="btn">Dopisz się</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-2">
+                <div class="title-box">
+                    <div>
+                        <h3>Dorzuć się</h3>
+                        <p class="join-title"> Dołącz do grona naszych patronów, weź udział w losowaniu wybranych
+                            warsztatów</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="shield">
+                                <ion-icon name="shield-checkmark"></ion-icon>
+                                Realnie dokonaj zmiany rzeczywistsci
+                            </li>
+                            <li class="shield">
+                                <ion-icon name="shield-checkmark"></ion-icon>
+                                Stań się częścią czegoś większego
+                            </li>
+                            <li class="shield">
+                                <ion-icon name="shield-checkmark"></ion-icon>
+                                Korzystaj ze zniżki na nas warsztaty
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="dorzucsie.html" class="btn">Dorzuć się</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="line-end">
+            </div>
+        </div>
+    </section>
+{% endblock sections %}
